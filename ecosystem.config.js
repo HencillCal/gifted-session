@@ -4,7 +4,8 @@ module.exports = {
     script: "index.js",
     cwd: "/root/web/gifted-session",
     env: {
-      PORT: 6898
+      PORT: 6898,
+      DATAASE_URL: ""
     }
   }]
 };
