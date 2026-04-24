@@ -2,7 +2,7 @@ const {
     giftedId,
     removeFile
 } = require('../gift');
-const { SESSION_PREFIX, GC_JID, BOT_REPO, WA_CHANNEL, MSG_FOOTER } = require('../config');
+const { SESSION_PREFIX, GC_JID, GC_JID2, BOT_REPO, WA_CHANNEL, MSG_FOOTER } = require('../config');
 const { isConfigured, saveSession } = require('../gift/sessionStore');
 const zlib = require('zlib');
 const express = require('express');
