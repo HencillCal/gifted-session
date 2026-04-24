@@ -54,7 +54,7 @@ app.get("/health", (req, res) => {
     res.json({
         status: 200,
         success: true,
-        service: "Gifted Session",
+        service: "Minister Session",
         storage: isConfigured() ? "database" : "inline-zlib",
         timestamp: new Date().toISOString(),
     });
@@ -62,7 +62,7 @@ app.get("/health", (req, res) => {
 
 app.listen(PORT, () => {
     console.log(
-        `\nDeployment Successful!\n\n Atassa-Session-Server Running on http://localhost:${PORT}`,
+        `\nDeployment Successful!\n\n Minister-Session-Server Running on http://localhost:${PORT}`,
     );
     init(config);
 });
