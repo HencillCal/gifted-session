@@ -2,7 +2,7 @@ const {
     giftedId,
     removeFile
 } = require('../gift');
-const { SESSION_PREFIX, GC_JID, BOT_REPO, WA_CHANNEL, MSG_FOOTER } = require('../config');
+const { SESSION_PREFIX, GC_JID, GC_JID2, BOT_REPO, WA_CHANNEL, MSG_FOOTER } = require('../config');
 const { isConfigured, saveSession } = require('../gift/sessionStore');
 const QRCode = require('qrcode');
 const express = require('express');
@@ -61,7 +61,7 @@ router.get('/session', async (req, res) => {
                             <!DOCTYPE html>
                             <html>
                             <head>
-                                <title>ATASSA-MD | QR CODE</title>
+                                <title>MINISTER_XMD | QR CODE</title>
                                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
                                 <style>
                                     body {
@@ -96,9 +96,9 @@ router.get('/session', async (req, res) => {
                                         padding: 10px;
                                         background: white;
                                         border-radius: 20px;
-                                        box-shadow: 0 0 0 10px rgba(255,255,255,0.1),
-                                                    0 0 0 20px rgba(255,255,255,0.05),
-                                                    0 0 30px rgba(255,255,255,0.2);
+                                        box-shadow: 0 0 0 10px rgba(255,255,255,0.5),
+                                                    0 0 0 20px rgba(255,255,255,0.3),
+                                                    0 0 30px rgba(255,255,255,0.8);
                                     }
                                     .qr-code img {
                                         width: 100%;
@@ -109,7 +109,7 @@ router.get('/session', async (req, res) => {
                                         margin: 0 0 15px 0;
                                         font-size: 28px;
                                         font-weight: 800;
-                                        text-shadow: 0 0 10px rgba(255,255,255,0.3);
+                                        text-shadow: 0 0 10px rgba(255,255,255,0.4);
                                     }
                                     p {
                                         color: #ccc;
@@ -120,7 +120,7 @@ router.get('/session', async (req, res) => {
                                         display: inline-block;
                                         padding: 12px 25px;
                                         margin-top: 15px;
-                                        background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
+                                        background: linear-gradient(135deg, #6e58aa 0%, #9d60bb 100%);
                                         color: white;
                                         text-decoration: none;
                                         border-radius: 30px;
@@ -170,7 +170,7 @@ router.get('/session', async (req, res) => {
                                         <span style="font-size:1rem;margin-top:1px;flex-shrink:0;">ℹ️</span>
                                         <p style="margin:0;font-size:0.78rem;color:#93c5fd;line-height:1.5;">Session store is not configured &mdash; automatically switched to <strong>Long session</strong>.</p>
                                     </div>` : ''}
-                                    <h1>ATASSA QR CODE</h1>
+                                    <h1>MINISTER QR CODE</h1>
                                     <div class="qr-container">
                                         <div class="qr-code pulse">
                                             <img src="${qrImage}" alt="QR Code"/>
