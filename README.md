@@ -1,9 +1,9 @@
-# Gifted-Session-Generator
+# Minister-Session-Generator
 
-> WhatsApp session generator for **ATASSA-MD / Gifted-MD** and any Baileys-based bot.  
+> WhatsApp session generator for **Minister-Xmd** and any Baileys-based bot.  
 > Supports **pair code** and **QR code** login, with optional **short session IDs** stored in MongoDB or PostgreSQL.
 
-<a href='https://github.com/mauricegift/gifted-session/fork' target="_blank">
+<a href='https://github.com/emkay416/gifted-session/fork' target="_blank">
   <img alt='FORK REPO' src='https://img.shields.io/badge/-FORK REPO-black?style=for-the-badge&logo=github&logoColor=white'/>
 </a>
 
@@ -25,8 +25,7 @@ Set these in a `.env` file or your hosting dashboard:
 
 | Variable | Required | Description |
 |---|---|---|
-| `DATABASE_URL` | Optional | MongoDB (`mongodb+srv://...`) or PostgreSQL (`postgres://...`) connection string. If not set, all sessions use long format. |
-| `SESSION_PREFIX` | Optional | Prefix prepended to session strings. Default: `Gifted~` |
+| `SESSION_PREFIX` | Optional | Prefix prepended to session strings. Default: `Minister~` |
 | `PORT` | Optional | Port to listen on. Default: `50900` |
 | `BOT_REPO` | Optional | GitHub URL shown in WhatsApp message button. Default: atassa repo |
 | `WA_CHANNEL` | Optional | WhatsApp channel URL shown in message button. |
@@ -134,16 +133,16 @@ connectToWhatsApp();
 ### Example `.env` for Your Bot
 
 ```env
-SESSION_ID=Gifted~abc123xyz   # short session
+SESSION_ID=Minister~abc123xyz   # short session
 # or
-SESSION_ID=Gifted~H4sIAAAAA...  # long session (full zlib string)
+SESSION_ID=Minister~H4sIAAAAA...  # long session (full zlib string)
 ```
 
 ---
 
 ## Deployment
 
-<a href='https://dashboard.heroku.com/new?template=https://github.com/mauricegift/gifted-session' target="_blank">
+<a href='https://dashboard.heroku.com/new?template=https://github.com/emkay416/gifted-session' target="_blank">
   <img alt='HEROKU DEPLOY' src='https://img.shields.io/badge/-HEROKU DEPLOY-black?style=for-the-badge&logo=heroku&logoColor=white'/>
 </a>
 <br>
@@ -157,23 +156,14 @@ SESSION_ID=Gifted~H4sIAAAAA...  # long session (full zlib string)
 
 ---
 
-## Live Demo
-
-[`https://session.giftedtech.co.ke`](https://session.giftedtech.co.ke)
-
 ---
 
 ## Owner
 
-<a href="https://github.com/mauricegift">
-  <img src="https://github.com/mauricegift.png" width="150" height="150" alt="Gifted Tech" style="border-radius:50%"/>
+<a href="https://github.com/emkay416">
 </a>
 
-[`ℹ️ Contact Owner`](https://api.giftedtech.co.ke/contact)
+[`ℹ️ Contact Owner`](https://wa.me/254769365617)
 
 
-## Repo Star History
 
-[![Gifted-Session](https://api.star-history.com/svg?repos=mauricegift/gifted-session&type=Timeline)](#)
-
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
