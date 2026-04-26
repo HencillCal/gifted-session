@@ -139,6 +139,8 @@
     }
     .shake { animation: shake 0.4s ease; }
 
+    @keyframes profileSpin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    .spin-pic { animation: profileSpin 8s linear infinite; }
     @keyframes spinOnce {
       to { transform: rotate(360deg); }
     }
@@ -196,7 +198,7 @@
   <header class="lg:hidden sticky top-0 z-40 nav-glass">
     <div class="px-5 h-14 flex items-center justify-between">
       <a href="/" class="flex items-center gap-3 no-underline">
-        <img src="https://files.catbox.moe/277hum.jpg" alt="MINISTER" class="w-8 h-8 rounded-full border border-slate-600/50 object-cover">
+        <img src="https://files.catbox.moe/277hum.jpg" alt="MINISTER" class="w-8 h-8 rounded-full spin-pic border border-slate-600/50 object-cover">
         <span class="text-base font-bold gradient-text">MINISTER-XMD</span>
       </a>
       <button id="menuBtn" class="w-9 h-9 flex items-center justify-center rounded-lg bg-white/5 border border-white/10 text-[#E3DBBB] outline-none focus:outline-none focus:ring-0" style="transition:background 0.18s, color 0.18s;">
@@ -209,7 +211,7 @@
   <aside id="sidebar" class="fixed top-0 left-0 z-50 h-full w-72 bg-slate-900 border-r border-white/6 flex flex-col pt-5 pb-8 transform -translate-x-full lg:translate-x-0 rounded-r-3xl lg:rounded-none">
     <div class="flex items-center justify-between px-5 mb-6">
       <a href="/" class="flex items-center gap-2.5 no-underline">
-        <img src="https://files.catbox.moe/277hum.jpg" alt="MINISTER" class="w-8 h-8 rounded-full border border-slate-600/50 object-cover">
+        <img src="https://files.catbox.moe/277hum.jpg" alt="MINISTER" class="w-8 h-8 rounded-full spin-pic border border-slate-600/50 object-cover">
         <span class="text-sm font-bold gradient-text">MINISTER-XMD</span>
       </a>
       <button id="closeBtn" class="lg:hidden w-8 h-8 flex items-center justify-center rounded-lg bg-white/5 text-[#E3DBBB]" style="transition:background 0.18s,color 0.18s;">
@@ -236,7 +238,7 @@
         <div class="text-center mb-8" data-anim="fade-up">
           <div class="flex justify-center mb-4">
             <div class="relative">
-              <img src="https://files.catbox.moe/277hum.jpg" alt="Minister" class="w-20 h-20 rounded-full border-2 border-amber-700/60 object-cover" style="box-shadow:0 0 0 6px rgba(146,64,14,0.1),0 0 30px rgba(146,64,14,0.25);">
+              <img src="https://files.catbox.moe/277hum.jpg" alt="Minister" class="w-20 h-20 rounded-full spin-pic border-2 border-amber-700/60 object-cover" style="box-shadow:0 0 0 6px rgba(146,64,14,0.1),0 0 30px rgba(146,64,14,0.25);">
               <span class="absolute -bottom-1 -right-1 w-6 h-6 bg-[#0a0a14] rounded-full border border-amber-700/40 flex items-center justify-center">
                 <i class="fas fa-link text-[#E3DBBB] text-xs"></i>
               </span>
@@ -360,7 +362,7 @@
     <footer class="py-8 px-5 bg-[#040408]">
       <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <a href="/" class="flex items-center gap-2 no-underline">
-          <img src="https://files.catbox.moe/277hum.jpg" alt="ATASSA" class="w-6 h-6 rounded-full border border-amber-700/40 object-cover">
+          <img src="https://files.catbox.moe/277hum.jpg" alt="ATASSA" class="w-6 h-6 rounded-full spin-pic border border-amber-700/40 object-cover">
           <span class="text-xs font-bold gradient-text">MINISTER-XMD</span>
         </a>
         <p class="text-[#E3DBBB] text-xs text-center">
