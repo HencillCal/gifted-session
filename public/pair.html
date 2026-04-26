@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>MINISTER-XMD | Pair Code Login</title>
   <meta name="description" content="Link your WhatsApp account to Atassa-MD using a pair code. Fast, secure, and simple.">
-  <meta name="theme-color" content="#7c4aed">
+  <meta name="theme-color" content="#92400e">
   <meta property="og:type" content="website">
   <meta property="og:title" content="MINISTER-XMD | Pair Code Login">
   <meta property="og:description" content="Link your WhatsApp with Atassa-MD using a pair code — no QR scan needed.">
@@ -29,12 +29,12 @@
     body::-webkit-scrollbar { display: none; }
 
     .gradient-text {
-      background: linear-gradient(135deg, #c084fc 0%, #818cf8 50%, #7c3aed 100%);
+      background: linear-gradient(135deg, #fbbf24 0%, #d97706 50%, #92400e 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
-    .gradient-bg { background: linear-gradient(135deg, #7c4aed, #9343ea); }
+    .gradient-bg { background: linear-gradient(135deg, #92400e, #78350f); }
 
     .blob {
       position: fixed; border-radius: 50%;
@@ -57,10 +57,10 @@
       content: '';
       position: absolute; bottom: -2px; left: 0;
       width: 0; height: 2px;
-      background: linear-gradient(90deg, #c084fc, #7c3aed);
+      background: linear-gradient(90deg, #fbbf24, #92400e);
       transition: width 0.22s ease; border-radius: 2px;
     }
-    .nav-link:hover { color: #c084fc; }
+    .nav-link:hover { color: #fbbf24; }
     .nav-link:hover::after { width: 100%; }
 
     .sidebar-link {
@@ -70,7 +70,7 @@
       font-size: 0.875rem; font-weight: 500;
       transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
     }
-    .sidebar-link:hover { background: rgba(124,58,237,0.12); color: #c084fc; transform: translateX(4px); }
+    .sidebar-link:hover { background: rgba(146,64,14,0.12); color: #fbbf24; transform: translateX(4px); }
     .sidebar-link i { width: 18px; text-align: center; font-size: 0.9rem; }
 
     #sidebar { transition: transform 0.3s cubic-bezier(0.4,0,0.2,1); }
@@ -104,17 +104,17 @@
       color: #6b7280; font-size: 0.85rem; text-decoration: none;
       transition: background 0.2s, color 0.2s, transform 0.2s;
     }
-    .social-icon:hover { background: rgba(124,58,237,0.2); color: #c084fc; transform: translateY(-3px); }
+    .social-icon:hover { background: rgba(146,64,14,0.2); color: #fbbf24; transform: translateY(-3px); }
 
     .footer-link { color: #6b7280; text-decoration: none; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; transition: color 0.18s, transform 0.18s; }
-    .footer-link:hover { color: #c084fc; transform: translateX(4px); }
+    .footer-link:hover { color: #fbbf24; transform: translateX(4px); }
     .divider-line { height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.07), transparent); }
 
     .card {
       background: rgba(15,15,26,0.95);
       border: 1px solid rgba(255,255,255,0.08);
       border-radius: 22px;
-      box-shadow: 0 24px 64px rgba(0,0,0,0.5), 0 0 0 1px rgba(124,58,237,0.08);
+      box-shadow: 0 24px 64px rgba(0,0,0,0.5), 0 0 0 1px rgba(146,64,14,0.08);
     }
 
     .input-field {
@@ -128,8 +128,8 @@
     .input-field::placeholder { color: #4b5563; }
     .input-field:focus {
       outline: none;
-      border-color: rgba(168,85,247,0.5);
-      box-shadow: 0 0 0 3px rgba(124,58,237,0.15);
+      border-color: rgba(180,83,9,0.5);
+      box-shadow: 0 0 0 3px rgba(146,64,14,0.15);
     }
 
     @keyframes shake {
@@ -151,18 +151,18 @@
 
     .code-display {
       font-size: 2rem; font-weight: 800; letter-spacing: 6px;
-      background: linear-gradient(135deg, #c084fc, #818cf8, #7c3aed);
+      background: linear-gradient(135deg, #fbbf24, #d97706, #92400e);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
     }
 
     .copy-btn {
       transition: transform 0.18s ease, background 0.18s ease;
-      background: rgba(124,58,237,0.15); border: 1px solid rgba(168,85,247,0.25);
-      border-radius: 10px; color: #c084fc;
+      background: rgba(146,64,14,0.15); border: 1px solid rgba(180,83,9,0.25);
+      border-radius: 10px; color: #fbbf24;
       padding: 8px 18px; font-size: 0.8rem; font-weight: 600;
       cursor: pointer; display: flex; align-items: center; gap: 6px;
     }
-    .copy-btn:hover { background: rgba(124,58,237,0.28); transform: translateY(-2px); }
+    .copy-btn:hover { background: rgba(146,64,14,0.28); transform: translateY(-2px); }
     .copy-btn.copied { background: rgba(74,222,128,0.15); border-color: rgba(74,222,128,0.3); color: #4ade80; }
 
     .new-btn {
@@ -190,8 +190,8 @@
   </style>
 </head>
 <body>
-  <div class="blob w-96 h-96 bg-purple-800/18 top-[-80px] left-[-80px]" style="animation:blobFloat 14s ease-in-out infinite;"></div>
-  <div class="blob w-72 h-72 bg-violet-600/12 bottom-[10%] right-[-60px]" style="animation:blobFloat 18s ease-in-out 5s infinite;"></div>
+  <div class="blob w-96 h-96 bg-amber-800/18 top-[-80px] left-[-80px]" style="animation:blobFloat 14s ease-in-out infinite;"></div>
+  <div class="blob w-72 h-72 bg-amber-700/12 bottom-[10%] right-[-60px]" style="animation:blobFloat 18s ease-in-out 5s infinite;"></div>
 
   <header class="lg:hidden sticky top-0 z-40 nav-glass">
     <div class="px-5 h-14 flex items-center justify-between">
@@ -218,10 +218,10 @@
     </div>
     <div class="px-3 flex-1 space-y-1">
       <a href="/" class="sidebar-link"><i class="fas fa-home"></i> Home</a>
-      <a href="/pair" class="sidebar-link" style="background:rgba(124,58,237,0.1);color:#c084fc;"><i class="fas fa-link"></i> Pair Code</a>
+      <a href="/pair" class="sidebar-link" style="background:rgba(146,64,14,0.1);color:#fbbf24;"><i class="fas fa-link"></i> Pair Code</a>
       <a href="/qr" class="sidebar-link"><i class="fas fa-qrcode"></i> QR Code</a>
       <a href="https://github.com/emkay416/MinisterX-md-" target="_blank" class="sidebar-link"><i class="fab fa-github"></i> Source Code</a>
-      <a href="https://t.me/Jinwiil_Onginjo" target="_blank" class="sidebar-link"><i class="fab fa-telegram"></i> Support</a>
+      <a href="https://wa.me/254769365617" target="_blank" class="sidebar-link"><i class="fab fa-whatsapp"></i> Support</a>
       <a href="https://whatsapp.com/channel/0029VamMdLZ8fewqWt6Ei51y" target="_blank" class="sidebar-link"><i class="fab fa-whatsapp"></i> WA Channel</a>
     </div>
     <div class="px-5 pt-5 border-t border-white/6">
@@ -236,9 +236,9 @@
         <div class="text-center mb-8" data-anim="fade-up">
           <div class="flex justify-center mb-4">
             <div class="relative">
-              <img src="https://files.catbox.moe/277hum.jpg" alt="Minister" class="w-20 h-20 rounded-full border-2 border-purple-500/60 object-cover" style="box-shadow:0 0 0 6px rgba(124,58,237,0.1),0 0 30px rgba(124,58,237,0.25);">
-              <span class="absolute -bottom-1 -right-1 w-6 h-6 bg-[#0a0a14] rounded-full border border-purple-500/40 flex items-center justify-center">
-                <i class="fas fa-link text-purple-400 text-xs"></i>
+              <img src="https://files.catbox.moe/277hum.jpg" alt="Minister" class="w-20 h-20 rounded-full border-2 border-amber-700/60 object-cover" style="box-shadow:0 0 0 6px rgba(146,64,14,0.1),0 0 30px rgba(146,64,14,0.25);">
+              <span class="absolute -bottom-1 -right-1 w-6 h-6 bg-[#0a0a14] rounded-full border border-amber-700/40 flex items-center justify-center">
+                <i class="fas fa-link text-amber-400 text-xs"></i>
               </span>
             </div>
           </div>
@@ -272,7 +272,7 @@
               <div class="flex rounded-xl overflow-hidden border border-white/10 bg-white/[0.03]">
                 <button type="button" id="typeShort" onclick="selectType('short')"
                   class="flex-1 py-2.5 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all duration-200"
-                  style="background:linear-gradient(135deg,#7c4aed,#9343ea);color:#fff;">
+                  style="background:linear-gradient(135deg,#92400e,#78350f);color:#fff;">
                   <i class="fas fa-database text-xs"></i> Short
                 </button>
                 <button type="button" id="typeLong" onclick="selectType('long')"
@@ -298,7 +298,7 @@
 
             <div class="mt-5 pt-5 border-t border-white/6 flex items-center justify-center gap-3">
               <span class="text-gray-600 text-xs">Prefer QR?</span>
-              <a href="/qr" class="text-purple-400 text-xs font-medium no-underline flex items-center gap-1" style="transition:color 0.18s;" onmouseover="this.style.color='#c084fc'" onmouseout="this.style.color='#a855f7'">
+              <a href="/qr" class="text-amber-400 text-xs font-medium no-underline flex items-center gap-1" style="transition:color 0.18s;" onmouseover="this.style.color='#fbbf24'" onmouseout="this.style.color='#b45309'">
                 <i class="fas fa-qrcode text-xs"></i> Scan QR Code instead
               </a>
             </div>
@@ -317,7 +317,7 @@
               <p class="text-gray-500 text-xs">Enter this in WhatsApp → Linked Devices → Link a Device</p>
             </div>
 
-            <div class="bg-purple-900/12 border border-purple-500/18 rounded-2xl p-5 text-center mb-5">
+            <div class="bg-amber-900/12 border border-amber-700/18 rounded-2xl p-5 text-center mb-5">
               <p id="pairCode" class="code-display"></p>
             </div>
 
@@ -332,7 +332,7 @@
             </div>
 
             <div class="mt-5 pt-5 border-t border-white/6 text-center">
-              <a href="/" class="text-gray-500 text-xs no-underline flex items-center justify-center gap-1.5" style="transition:color 0.18s;" onmouseover="this.style.color='#c084fc'" onmouseout="this.style.color='#6b7280'">
+              <a href="/" class="text-gray-500 text-xs no-underline flex items-center justify-center gap-1.5" style="transition:color 0.18s;" onmouseover="this.style.color='#fbbf24'" onmouseout="this.style.color='#6b7280'">
                 <i class="fas fa-arrow-left text-xs"></i> Back to Home
               </a>
             </div>
@@ -341,15 +341,15 @@
 
         <div class="mt-8 grid grid-cols-3 gap-3" data-anim="fade-up" data-delay="2">
           <div class="bg-white/[0.025] border border-white/6 rounded-xl p-3 text-center">
-            <i class="fas fa-shield-alt text-purple-400 text-sm mb-1.5 block"></i>
+            <i class="fas fa-shield-alt text-amber-400 text-sm mb-1.5 block"></i>
             <p class="text-gray-500 text-xs">Encrypted</p>
           </div>
           <div class="bg-white/[0.025] border border-white/6 rounded-xl p-3 text-center">
-            <i class="fas fa-bolt text-purple-400 text-sm mb-1.5 block"></i>
+            <i class="fas fa-bolt text-amber-400 text-sm mb-1.5 block"></i>
             <p class="text-gray-500 text-xs">Instant</p>
           </div>
           <div class="bg-white/[0.025] border border-white/6 rounded-xl p-3 text-center">
-            <i class="fas fa-mobile-alt text-purple-400 text-sm mb-1.5 block"></i>
+            <i class="fas fa-mobile-alt text-amber-400 text-sm mb-1.5 block"></i>
             <p class="text-gray-500 text-xs">No Phone</p>
           </div>
         </div>
@@ -360,15 +360,15 @@
     <footer class="py-8 px-5 bg-[#040408]">
       <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <a href="/" class="flex items-center gap-2 no-underline">
-          <img src="https://files.catbox.moe/277hum.jpg" alt="ATASSA" class="w-6 h-6 rounded-full border border-purple-500/40 object-cover">
+          <img src="https://files.catbox.moe/277hum.jpg" alt="ATASSA" class="w-6 h-6 rounded-full border border-amber-700/40 object-cover">
           <span class="text-xs font-bold gradient-text">MINISTER-XMD</span>
         </a>
         <p class="text-gray-700 text-xs text-center">
-          &copy; <span id="yr"></span> MINISTER-XMD &mdash; Built by <a href="https://github.com/mauricegift" target="_blank" class="text-purple-400 no-underline font-medium" style="transition:color 0.18s;" onmouseover="this.style.color='#c084fc'" onmouseout="this.style.color='#a855f7'">Minister Tech</a>
+          &copy; <span id="yr"></span> MINISTER-XMD &mdash; Built by <a href="https://github.com/mauricegift" target="_blank" class="text-amber-400 no-underline font-medium" style="transition:color 0.18s;" onmouseover="this.style.color='#fbbf24'" onmouseout="this.style.color='#b45309'">Minister Tech</a>
         </p>
         <div class="flex gap-2">
           <a href="https://github.com/emkay416/MinisterX-md-" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-          <a href="https://t.me/Jinwiil_Onginjo" target="_blank" class="social-icon"><i class="fab fa-telegram"></i></a>
+          <a href="https://wa.me/254769365617" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
           <a href="https://whatsapp.com/channel/0029VamMdLZ8fewqWt6Ei51y" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
@@ -429,12 +429,12 @@
       const shortBtn = document.getElementById('typeShort');
       const longBtn  = document.getElementById('typeLong');
       if (type === 'short') {
-        shortBtn.style.background = 'linear-gradient(135deg,#7c4aed,#9343ea)';
+        shortBtn.style.background = 'linear-gradient(135deg,#92400e,#78350f)';
         shortBtn.style.color = '#fff';
         longBtn.style.background = 'transparent';
         longBtn.style.color = '#6b7380';
       } else {
-        longBtn.style.background = 'linear-gradient(135deg,#7c4aed,#9343ea)';
+        longBtn.style.background = 'linear-gradient(135deg,#92400e,#78350f)';
         longBtn.style.color = '#fff';
         shortBtn.style.background = 'transparent';
         shortBtn.style.color = '#6c7280';
